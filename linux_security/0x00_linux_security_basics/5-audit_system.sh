@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo lynis --cronjob
+sudo lynis audit system
