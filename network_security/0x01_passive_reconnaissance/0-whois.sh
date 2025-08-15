@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo whois "$1" | awk 'BEGIN{print "Registrant Organization,Registrant State/Province,Registrant Country,Registrant Email,Admin Organization,Admin State/Province,Admin Country,Admin Email,Tech Organization,Tech State/Province,Tech Country,Tech Email"} /Registrant/ || /Admin/ || /Tech/{gsub(/: /,","); printf "%s,", $0} END{print ""}' > $1.csv
+sudo whois "$1" | awk '/Registrant/ || /Admin/ || /Tech/ {gsub(/^ +|: /,","); print}'
