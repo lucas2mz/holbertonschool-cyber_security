@@ -1,2 +1,2 @@
 #!/bin/bash
-nslookup -q=TXT "$1"
+nslookup -query=TXT "$1"
