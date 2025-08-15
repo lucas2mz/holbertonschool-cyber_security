@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo whois "$1" | awk '/Registrant/ || /Admin/ || /Tech/ {gsub(/^ +|: /,","); print}' > $1.csv # corregir
+sudo whois $1 | awk '/Registrant/ || /Admin/ || /Tech/ {gsub(/^ +|: /,","); print}' > $1.csv # corregir
