@@ -1,2 +1,2 @@
 #!/bin/bash
-find / -xdev -type d -perm -o=w
+find / -xdev -type d -perm -0002
