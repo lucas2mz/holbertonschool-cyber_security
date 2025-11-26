@@ -1,8 +1,15 @@
 #!/bin/bash
 
+"""
+Script
+"""
+
 import sys
 
 def main():
+    """
+    Funcion Principal
+    """
     pid = sys.argv[1]
     search = sys.argv[2].encode("ascii")
     replace = sys.argv[3].encode("ascii")
