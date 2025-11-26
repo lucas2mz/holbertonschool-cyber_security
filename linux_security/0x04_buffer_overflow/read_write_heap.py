@@ -6,6 +6,7 @@ Script
 
 import sys
 
+
 def main():
     """
     Funcion Principal
@@ -39,6 +40,7 @@ def main():
         mem.write(replace)
 
         print("Texto remplazado")
+
 
 if __name__ == "__main__":
     main()
