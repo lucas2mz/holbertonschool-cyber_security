@@ -1,3 +1,3 @@
 #!/bin/bash
+awk '{print $1}' logs.txt | sort | uniq -c | sort -nr | head -1 | awk '{print $2}' | xargs -I{} grep -c "^{}" logs.txt
 
-ATTACKER=$(awk '{print $1}' logs.txt | sort | uniq -c | sort -nr | head -1 | awk '{print $2}') | grep -c "^$ATTACKER" logs.txt
