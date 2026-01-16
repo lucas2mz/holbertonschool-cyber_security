@@ -28,6 +28,7 @@ def list_tasks
   if tasks.empty?
     puts "No tasks found."
   else
+    puts "Tasks:"
     tasks.each_with_index do |task, index|
       puts "#{index + 1}. #{task}"
     end
