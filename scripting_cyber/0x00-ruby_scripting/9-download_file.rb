@@ -3,6 +3,11 @@ require 'uri'
 require 'fileutils'
 
 def download_file
+  if ARGV.length != 2
+    puts "Usage: 9-download_file.rb URL LOCAL_FILE_PATH"
+    return
+  end
+
   url = ARGV[0]
   local_path = ARGV[1]
 
