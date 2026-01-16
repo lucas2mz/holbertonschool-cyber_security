@@ -1,4 +1,4 @@
-class CaesarCiphe
+class CaesarCipher
 
     def initialize(shift)
         @shift = shift
